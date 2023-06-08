@@ -18,12 +18,3 @@ include::{snippets}/create-post-success/http-request.adoc[]
 
 .response
 include::{snippets}/create-post-success/http-response.adoc[]
-
-== 2. 게시글
-=== 2.1. 저장
-==== 성공
-.request
-include::{snippets}/create-member-success/http-request.adoc[]
-
-.response
-include::{snippets}/create-member-success/http-response.adoc[]

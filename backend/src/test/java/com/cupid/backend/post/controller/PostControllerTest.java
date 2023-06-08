@@ -43,6 +43,16 @@ public class PostControllerTest extends ApiDocument {
         게시글_저장_요청_성공(resultActions);
     }
 
+    @Test
+    void 게시글_조회_성공() throws Exception {
+        // given
+        willDoNothing().given(postService).create(any(PostRequest.class));
+        // when
+        ResultActions resultActions = 게시글_저장_요청();
+        // then
+        게시글_저장_요청_성공(resultActions);
+    }
+
     private ResultActions 게시글_저장_요청() throws Exception {
         return mockMvc.perform(post("/api/v1/posts")
                 .contentType(MediaType.APPLICATION_JSON)

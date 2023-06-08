@@ -27,6 +27,9 @@ public class MemberControllerTest extends ApiDocument {
     @BeforeEach
     void setUp() {
         signUpRequest = SignUpRequest.builder()
+                .name("최용태")
+                .age(27)
+                .email("test@test.com")
                 .build();
     }
 

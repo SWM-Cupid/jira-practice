@@ -7,6 +7,5 @@ import org.springframework.stereotype.Service;
 public class MemberService {
 
     public void create(SignUpRequest signUpRequest) {
-
     }
 }

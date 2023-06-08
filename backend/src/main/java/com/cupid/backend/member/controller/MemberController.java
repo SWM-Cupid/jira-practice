@@ -1,5 +1,7 @@
 package com.cupid.backend.member.controller;
 
+import com.cupid.backend.member.controller.dto.SignUpRequest;
+import com.cupid.backend.member.service.MemberService;
 import com.cupid.backend.post.controller.dto.PostRequest;
 import com.cupid.backend.post.service.PostService;
 import lombok.RequiredArgsConstructor;
@@ -17,8 +19,8 @@ public class MemberController {
     private final MemberService memberService;
 
     @PostMapping
-    public ResponseEntity<Void> create(@RequestBody MemberRequest memberRequest) {
-        memberService.create(memebrRequest);
+    public ResponseEntity<Void> create(@RequestBody SignUpRequest signUpRequest) {
+        memberService.create(signUpRequest);
         return ResponseEntity.ok().build();
     }
 }
